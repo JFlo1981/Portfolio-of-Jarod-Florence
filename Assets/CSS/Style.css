@@ -1,0 +1,123 @@
+:root {
+    --colo1: rgb(22, 160, 240);
+    --colo2: rgb(183, 217, 236);
+    --colo3: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    color: var(--colo1);
+    font-family: serif;
+    background: #fff;
+}
+
+
+
+header {
+    padding: 20px 25px;
+    background: radial-gradient(rgba(0,0,0,0.0) rgba(0,0,0,0.0));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+
+header h1 {
+    font-weight: bold;
+    font-size: 54px;
+    color: rgb(22, 160, 240);
+    margin: 0;
+    text-shadow: 0 0 9px var(--colo1);
+}  
+
+
+
+header a {
+    text-decoration: none;
+    color: var(--colo1);
+}
+
+header nav {
+    margin: 1px 0;
+  }
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none
+  }
+
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.75vw;
+    text-shadow: 0 0 7px rgb(22, 160, 240);
+  }
+  
+  header nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-shadow:  0 0 9px rgb(255, 255, 255);
+  }
+
+  header h1 a:hover {
+    font-size: 54px;  
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-shadow:  0 0 9px rgb(255, 255, 255);
+  }
+
+ 
+  .hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  .hero::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+
+  }
+  .hero video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+  }
+
+  #caption{
+
+    position: relative;
+    z-index: 20;
+    font-size: 36px;
+    text-align: center;
+    
+  }
