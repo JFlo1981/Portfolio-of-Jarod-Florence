@@ -36,7 +36,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 54px;
+    font-size:3.5vmax;
     color: rgb(22, 160, 240);
     margin: 0;
     text-shadow: 0 0 9px var(--colo1);
@@ -64,7 +64,7 @@ header nav ul {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.75vw;
+    font-size: 1.7vmax;
     text-shadow: 0 0 7px rgb(22, 160, 240);
   }
   
@@ -75,7 +75,6 @@ header nav ul {
   }
 
   header h1 a:hover {
-    font-size: 54px;  
     color: rgb(255, 255, 255);
     border-radius: 15px;
     text-shadow:  0 0 9px rgb(255, 255, 255);
@@ -100,7 +99,7 @@ header nav ul {
     z-index: 10;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.45);
 
   }
   .hero video {
@@ -112,12 +111,73 @@ header nav ul {
     z-index: 5;
     object-fit: cover;
   }
+  .hero #texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background:url('./assets/images/texture.png');
+  }
 
-  #caption{
+  .hero #caption {
 
+    padding-top: 7rem;
     position: relative;
     z-index: 20;
-    font-size: 36px;
     text-align: center;
+    text-shadow: 0 0 7px rgb(22, 160, 240);    
+  }
+
+  .hero #caption h2 {
+
+    font-size: 9vmax;
+    margin-bottom: 0.5rem;
+  
+  }
+
+  .hero #caption h3 {
+    font-weight: 400;
+    font-size: 3vmax;
+    margin: 0;
+  }
+
+
+ 
+  @media screen and (min-width:768px) 
+  {
+     .hero #caption h2 {
+      font-size: 9vmax;
+    }
+  
+     .hero #caption h3{
+       font-size: 3vmax;
+     }
     
   }
+
+  @media screen and (min-width:992px) 
+  {
+     .hero #caption h2 {
+      font-size: 9vmax;
+    }
+  
+     .hero #caption h3{
+       font-size: 3vmax;
+     }
+    
+  }
+
+  @media screen and (min-width:1200px) 
+  {
+     .hero #caption h2 {
+      font-size: 9vmax;
+    }
+  
+     .hero #caption h3{
+       font-size: 3vmax;
+     }
+    
+  }
+
