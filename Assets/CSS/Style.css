@@ -111,15 +111,7 @@ header nav ul {
     z-index: 5;
     object-fit: cover;
   }
-  .hero #texture {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 15;
-    background:url('./assets/images/texture.png');
-  }
+
 
   .hero #caption {
 
@@ -143,7 +135,17 @@ header nav ul {
     margin: 0;
   }
 
-
+ @media screen and (min-width:768px) 
+  {
+     .hero #caption h2 {
+      font-size: 9vmax;
+    }
+  
+     .hero #caption h3{
+       font-size: 3vmax;
+     }
+    
+  }
  
   @media screen and (min-width:768px) 
   {
