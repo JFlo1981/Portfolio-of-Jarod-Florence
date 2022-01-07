@@ -13,9 +13,9 @@
 body {
     color: var(--colo1);
     font-family: serif;
-    background: #fff;
     text-shadow: 0 0 9px rgb(255, 255, 255);
     text-align: center;
+    background: radial-gradient(var(--colo1), var(--colo2));
 }
 
 header {
@@ -35,21 +35,7 @@ header {
   z-index: 9999;
 }
 
-/* header {
-    padding: 20px 25px;
-    background: radial-gradient(rgba(0,0,0,0.0) rgba(0,0,0,0.0));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-  } */
+
 
 header h1 {
     font-weight: bold;
@@ -101,7 +87,7 @@ header nav ul {
   .hero {
     /* background-image: url("../images/hero-bg.jpg"); */
     background: radial-gradient(var(--colo1), var(--colo2));
-    height: 600px;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -125,8 +111,11 @@ header nav ul {
   .flex {
     margin: 0;
     display: flex;
-    border: 5px solid #333;
     margin-bottom: 2rem;
+    background: radial-gradient(var(--colo1), var(--colo2));
+    text-shadow:  0 0 9px rgb(255, 255, 255);
+    color: var(--colo2);
+
   }
 
   .flex div:first-child {
@@ -159,6 +148,12 @@ header nav ul {
     background-image: url("../Images/port-photo.jpg")
   }
 
+  /* #what-i-do {
+
+  background: radial-gradient(var(--colo1), var(--colo2)); */
+
+  }
+
 
  @media screen and (min-width:768px) 
   {
@@ -169,7 +164,14 @@ header nav ul {
      .hero #caption h3{
        font-size: 3vmax;
      }
+
+     .flex h3 {
+       font-size: 5vmax;
+     }
     
+     .flex p {
+       font-size: 2.5vmax;
+     }
   
  
   @media screen and (min-width:768px) 
