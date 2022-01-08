@@ -4,10 +4,20 @@
     --colo3: rgb(0, 0, 0);
 }
 
+:target:before {
+  content:"";
+  display:block;
+  height:100px; /* fixed header height*/
+  margin:-100px 0 0; /* negative fixed header height */
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -19,8 +29,8 @@ body {
 }
 
 header {
-  padding: 20px 35px;
-  background-color: var(--tertiary-color);
+  padding: 20px 15px;
+  background-color: var(--colo3);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -65,9 +75,9 @@ header nav ul {
   }
 
   header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-weight: lighter;
-    font-size: 1.5vmax;
+    font-size: 2vmax;
     text-shadow: 0 0 7px rgb(22, 160, 240);
   }
   
@@ -83,6 +93,35 @@ header nav ul {
     text-shadow:  0 0 9px rgb(255, 255, 255);
   }
 
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 15px 10px 15px;
+  }
+  
+  footer h2 {
+   font-size: 2.5vmax;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    font-size: 2.5vmax;
+    margin: 0;
+    color: var(--colo1)
+  }
+
+  footer a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-shadow:  0 0 9px rgb(255, 255, 255);
+  }
  
   .hero {
     /* background-image: url("../images/hero-bg.jpg"); */
@@ -109,7 +148,7 @@ header nav ul {
   }
 
   .flex {
-    margin: 0;
+    margin: 0px;
     display: flex;
     margin-bottom: 2rem;
     background: radial-gradient(var(--colo1), var(--colo2));
@@ -145,15 +184,75 @@ header nav ul {
   }
 
   .flex:first-of-type div:first-child {
-    background-image: url("../Images/port-photo.jpg")
+    background-image: url("../Images/port-photo.jpg"); alt: (Jarod);
   }
 
-  /* #what-i-do {
-
-  background: radial-gradient(var(--colo1), var(--colo2)); */
-
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0 0 5px 0;
+    margin: 0 auto;
   }
 
+  .container1 h4{
+    position: absolute;
+    display: block;
+    width: 80%;
+    bottom: 8px;
+    left: 10px;
+    /* max-width: 610px; */
+    font-size: 3vw;
+    font-family: 'Roboto Slab', Rockwell, Serif;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
+    /* padding: .6em 1em .6em 1.7em; */
+  }
+
+  .container2 {
+    display: flex;
+    display: block;
+    position: relative;
+    width: 100%;
+    /* max-width: 500px; */
+    height: auto;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  .container2 h4{
+    position: absolute;
+    /* display: block; */
+    width: 70%;
+    bottom: 8px;
+    left: 300px;
+    /* max-width: 610px; */
+    font-size: 2.6vw;
+    font-family: 'Roboto Slab', Rockwell, Serif;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
+    padding: 0 0 .7em 0;
+  }
+  
+
+ .responsive1 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+ }
+
+ .responsive2 {
+   width: 100%;  
+   max-width: 400px;
+   height: auto;
+ }
 
  @media screen and (min-width:768px) 
   {
@@ -172,6 +271,14 @@ header nav ul {
      .flex p {
        font-size: 2.5vmax;
      }
+
+     #what-i-do h2 {
+      font-size: 2.5vmax;
+    }
+
+    #what-i-do h4 {
+      font-size: 2.3vmax;
+    }
   
  
   @media screen and (min-width:768px) 
