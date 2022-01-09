@@ -18,7 +18,7 @@ The page consists of a header with navigation links to various parts of the webp
 ## My Portfolio:
 https://jflo1981.github.io/Portfolio-of-Jarod-Florence/
 
-![Portfolio Screenshot](https://raw.github.com/JFlo1981/Portfolio-of-Jarod-Florence/main/Assets/CSS/Images/port-screenshot.png)
+![port-screenshot](https://user-images.githubusercontent.com/88595179/148697779-c0bbd108-ef68-4f00-890c-500ae9773d62.png)
 
 ## Github Link:
 https://github.com/JFlo1981/Portfolio-of-Jarod-Florence
