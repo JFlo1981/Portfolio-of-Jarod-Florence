@@ -7,8 +7,8 @@
 :target:before {
   content:"";
   display:block;
-  height:100px; /* fixed header height*/
-  margin:-100px 0 0; /* negative fixed header height */
+  height:75px; /* fixed header height*/
+  margin:-75px 0 0; /* negative fixed header height */ 
 }
 
 
@@ -58,6 +58,9 @@ header h1 {
 
 
 header a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-decoration: none;
     color: var(--colo1);
 }
@@ -75,7 +78,7 @@ header nav ul {
   }
 
   header nav ul li a {
-    padding: 10px 10px;
+    padding: 10px 17px;
     font-weight: lighter;
     font-size: 2vmax;
     text-shadow: 0 0 7px rgb(22, 160, 240);
@@ -98,7 +101,8 @@ header nav ul {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0px 15px 10px 15px;
+    height: 5rem;
+    padding: 25px 15px 10px 15px;
   }
   
   footer h2 {
@@ -124,9 +128,8 @@ header nav ul {
   }
  
   .hero {
-    /* background-image: url("../images/hero-bg.jpg"); */
     background: radial-gradient(var(--colo1), var(--colo2));
-    height: 80vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -187,6 +190,11 @@ header nav ul {
     background-image: url("../Images/port-photo.jpg"); alt: (Jarod);
   }
 
+  #what-i-do h2 {
+    font-size: 2em;
+    color: var(--colo1);
+  }
+
   .container1 {
     display: flex;
     flex-wrap: wrap;
@@ -202,24 +210,22 @@ header nav ul {
   .container1 h4{
     position: absolute;
     display: block;
-    width: 80%;
+    width: 75%;
     bottom: 8px;
     left: 10px;
-    /* max-width: 610px; */
-    font-size: 3vw;
+    font-size: 3vmax;
     font-family: 'Roboto Slab', Rockwell, Serif;
     font-weight: bold;
     color: #FFF;
     text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
-    /* padding: .6em 1em .6em 1.7em; */
   }
 
   .container2 {
     display: flex;
+    flex-wrap: wrap;
     display: block;
     position: relative;
     width: 100%;
-    /* max-width: 500px; */
     height: auto;
     border: none;
     padding: 10px 20px;
@@ -228,12 +234,10 @@ header nav ul {
 
   .container2 h4{
     position: absolute;
-    /* display: block; */
     width: 70%;
     bottom: 8px;
-    left: 300px;
-    /* max-width: 610px; */
-    font-size: 2.6vw;
+    left: 50px;
+    font-size: 2.5vmax;
     font-family: 'Roboto Slab', Rockwell, Serif;
     font-weight: bold;
     color: #FFF;
@@ -244,15 +248,38 @@ header nav ul {
 
  .responsive1 {
   width: 100%;
-  max-width: 600px;
+  max-width: 1500px;
   height: auto;
  }
 
  .responsive2 {
    width: 100%;  
-   max-width: 400px;
+   max-width: 1200px;
    height: auto;
  }
+
+#how-we-meet {
+  background: radial-gradient(var(--colo2), var(--colo1));
+  position: relative;
+  justify-content: center;
+  
+
+}
+
+#how-we-meet h2 {
+  font-size: 5vmax;
+
+}
+
+#how-we-meet div ul {
+
+  padding: 5px 15px 25px 15px;
+  list-style: none;
+  color: var(--colo1);
+  font-size: 2vmax;
+
+}
+
 
  @media screen and (min-width:768px) 
   {
@@ -273,7 +300,7 @@ header nav ul {
      }
 
      #what-i-do h2 {
-      font-size: 2.5vmax;
+      font-size: vmax;
     }
 
     #what-i-do h4 {
